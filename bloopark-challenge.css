@@ -101,6 +101,24 @@ body{
   margin-left: 21px; 
 }
 
+/* canvas greater than symbol */
+#canvas {
+    transform: scale(0.6);
+    margin-left: 10px;
+    margin-top: 5px;
+}
 
-
+/* sign-in-container */
+.sign-in-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 90%;
+}
+.sign-in-container p{
+    font: normal normal 600 18px/14px 'Barlow by Thunderpanda ver 02', sans-serif;    
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    
+}
 
