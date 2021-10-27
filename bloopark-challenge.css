@@ -41,7 +41,7 @@ body{
   display:flex;
   justify-content:center;
   transform:rotate(180deg);
-  gap:2px;
+  gap: 2.5px;
   width:19px;
   margin-right: -60px;
   transform: rotate(180deg) scale(0.8);
@@ -114,11 +114,35 @@ body{
     align-items: center;
     justify-content: end;
     width: 90%;
+    margin-bottom: 130px;
 }
 .sign-in-container p{
-    font: normal normal 600 18px/14px 'Barlow by Thunderpanda ver 02', sans-serif;    
+    font-family: 'Barlow by Thunderpanda ver 02', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 14px;
     letter-spacing: 0px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;    
 }
 
+/* welcome-container */
+.welcome-container{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border:1px solid;
+    margin:0 45px;
+}
+.welcome-container h1{
+    font: normal normal 900 60px/80px Playfair Display;
+    margin:0px;
+}
+.welcome-container p{
+    height: 52px;
+    width: 285px;
+    font-family:'Barlow by Thunderpanda ver 02', sans-serif;
+    font-size:18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    opacity: 0.55;
+}
