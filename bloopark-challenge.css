@@ -31,6 +31,31 @@ body{
   position:relative;
   top:50%;   
 }
+/* connectivity intensity symbol */
+.connectivity-container{
+  display:flex;
+  justify-content:center;
+  transform:rotate(180deg);
+  gap:2px;
+  width:19px;
+}
+.b1,.b2,.b3,.b4{
+  background-color:white;
+  width:3px;
+  border-radius:2px;
+}
+.b4{
+  height:5px;
+}
+.b3{
+  height:9px;
+}
+.b2{
+  height:13px;
+}
+.b1{
+  height:17px;
+}
 
 
 
