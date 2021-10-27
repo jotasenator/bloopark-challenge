@@ -133,7 +133,10 @@ body{
     margin:0 45px;
 }
 .welcome-container h1{
-    font: normal normal 900 60px/80px Playfair Display;
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
     margin:0px;
 }
 .welcome-container p{
