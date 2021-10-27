@@ -130,7 +130,6 @@ body{
     color:white;
     display: flex;
     flex-direction: column;
-    border:1px solid;
     margin:0 45px;
 }
 .welcome-container h1{
@@ -146,3 +145,26 @@ body{
     letter-spacing: 0px;
     opacity: 0.55;
 }
+.button-container{
+    display:flex;
+    flex-direction: column;    
+    justify-content: center;    
+    margin:0 45px;
+    gap:15px;
+}
+.join-community-button,
+.sign-up-facebook-button{
+    height:55px;
+    width:285px;
+}
+.join-community-button{
+    letter-spacing: 0px;
+    background: #121C5F73 0% 0% no-repeat padding-box;
+    color:white;
+    border: 2px solid #FFFFFF;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size:17px;
+    line-height: 17px;
+    font-family:'Barlow by Thunderpanda ver 02', sans-serif;
+    }
