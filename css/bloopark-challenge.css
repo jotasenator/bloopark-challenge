@@ -263,13 +263,18 @@ body{
 }
 .ball-8{
   background-color: #FFEEB0;
-    bottom: 800px;
-    height: 34px;
-    left: 158px;
-    width: 34px;
+  bottom: 800px;
+  height: 34px;
+  left: 158px;
+  width: 34px;
 }
 .ball-9{
-
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 5px #00A8A6;
+  bottom: 836px;
+  height: 22px;
+  left: 80px;
+  width: 22px;
 }
 .ball-10{
 
