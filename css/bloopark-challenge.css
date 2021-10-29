@@ -106,7 +106,7 @@ body{
 
 /* canvas greater than symbol */
 #canvas {
-    transform: scale(0.6);
+    transform: scale(0.4);
     margin-left: 10px;
     margin-top: 5px;
 }
@@ -324,7 +324,7 @@ body{
   border: 1px solid #D7DAEB;
   border-radius: 7px;
   position: relative;
-  bottom:190px;
+  bottom:230px;
 }
 .input-container input[type='submit']{
   background-color:#01A9A7 !important;
@@ -334,7 +334,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 349px;
+  bottom: 389px;
   position: relative;
 }
 .or-line{
@@ -365,10 +365,35 @@ body{
   letter-spacing: 0px;
   color: #1B245C;
   margin: 0 45px;
-  bottom: 230px;
+  bottom: 270px;
   position: relative;
   display:none;
 }
 .join-community-container h1{
   margin:0;
+}
+.back-container{
+  display:none;  
+  align-items: center;
+  justify-content: start;
+}
+.back-container button{ 
+  display:flex; 
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  bottom: 155px;
+  position: relative;
+  left: 10px;
+}
+.back-container p{
+  font-family: 'Barlow by Thunderpanda ver 02', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 14px;
+  letter-spacing: 0px;
+  color: black;    
+}
+#canvas-back{
+  transform:scale(0.4) rotate(180deg);
 }

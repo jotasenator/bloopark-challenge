@@ -10,6 +10,17 @@ ctx.lineWidth = 3;
 ctx.strokeStyle = 'white';
 ctx.stroke();
 
+// canvas minor than symbol
+let canvasBack = document.getElementById("canvas-back");
+let ctxBack = canvasBack.getContext("2d");
+ctxBack.lineCap = "round";
+ctxBack.moveTo(2, 2);
+ctxBack.lineTo(9, 9);
+ctxBack.lineTo(2, 17);
+ctxBack.lineWidth = 3;
+ctxBack.strokeStyle = 'black';
+ctxBack.stroke();
+
 
 // function to change elements when in sign in screen
 
@@ -25,9 +36,7 @@ const signInScreen =function(){
 
     $('.join-community-button').css('display','none')
 
-
-
-    $('.sign-up-facebook-button').css({'bottom': '350px','position': 'relative','margin': '0 auto '})
+    $('.sign-up-facebook-button').css({'bottom': '390px','position': 'relative','margin': '0 auto '})
 
     $('.input-container').prepend(' <form action="#" >' + 
                                     '<div><label for="email">Email:</label>'+ 
@@ -39,11 +48,13 @@ const signInScreen =function(){
                                     '<input type="submit" value="Join the community">'+  
                                     '</form> ')
 
-    $('.balls-initial-view').css('visibility','hidden')
+    $('.balls-initial-view,.sign-in-container').css('visibility','hidden')
     
-    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'979px'})
+    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'1029px'})
 
-    $('.join-community-container,.input-container,.or-container').css('display','flex')
+    $('.join-community-container,.input-container,.or-container,.back-container').css('display','flex')
+
+
 }
 
 // function to change elements when in first screen
@@ -59,4 +70,4 @@ const homeScreen =function(){
 }
 
 // when click join-community or sign-in button then all black
-$('.join-community-button,.sign-in-container button').on('click',signInScreen)
+$('.join-community-button,.sign-in-container').on('click',signInScreen)
