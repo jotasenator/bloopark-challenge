@@ -19,13 +19,13 @@ const signInScreen =function(){
     
     $('.wifi,.b1,.b2,.b3,.b4,.battery,battery-tail').css('background-color','black')
     
-    $('.wifi').css('box-shadow','0px 0px 0px 10px #22389C,0px 0px 0px 30px black,0px 0px 0px 40px #22389C,0px 0px 0px 60px black')  
+    $('.wifi').css('box-shadow','0px 0px 0px 10px white,0px 0px 0px 30px black,0px 0px 0px 40px white,0px 0px 0px 60px black')  
     
     $('.clock').css('color','black')
 
     $('.join-community-button').css('display','none')
 
-    
+
 
     $('.sign-up-facebook-button').css({'bottom': '220px','position': 'relative','margin': '0 auto '})
 
@@ -41,7 +41,7 @@ const signInScreen =function(){
 
     $('.balls-initial-view').css('visibility','hidden')
     
-    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'829px'})
+    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'889px'})
 }
 
 // function to change elements when in first screen
