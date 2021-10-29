@@ -58,8 +58,7 @@ const signInScreen =function(){
 }
 
 // function to change elements when in first screen
-const homeScreen =function(){
-    
+const homeScreen =function(){    
     location.reload();
     return false;
 }

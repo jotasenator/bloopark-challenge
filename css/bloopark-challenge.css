@@ -125,6 +125,12 @@ body{
   border:none;
   cursor: pointer;
 }
+.sign-in-container button:hover{
+  padding-right:2px;
+}
+.sign-in-container button p:hover{
+  color:#EF24A8;  
+}
 .sign-in-container p{
     font-family: 'Barlow by Thunderpanda ver 02', sans-serif;
     font-weight: 600;
@@ -387,6 +393,12 @@ body{
   bottom: 155px;
   position: relative;
   left: 10px;
+}
+.back-container button p:hover{
+  color:#01A9A7;
+}
+.back-container button:hover{
+  padding-left:2px;
 }
 .back-container p{
   font-family: 'Barlow by Thunderpanda ver 02', sans-serif;
