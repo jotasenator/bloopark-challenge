@@ -27,7 +27,7 @@ const signInScreen =function(){
 
 
 
-    $('.sign-up-facebook-button').css({'bottom': '284px','position': 'relative','margin': '0 auto '})
+    $('.sign-up-facebook-button').css({'bottom': '350px','position': 'relative','margin': '0 auto '})
 
     $('.input-container').prepend(' <form action="#" >' + 
                                     '<div><label for="email">Email:</label>'+ 
@@ -41,7 +41,7 @@ const signInScreen =function(){
 
     $('.balls-initial-view').css('visibility','hidden')
     
-    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'889px'})
+    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'979px'})
 }
 
 // function to change elements when in first screen

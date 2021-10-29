@@ -324,7 +324,7 @@ body{
   border: 1px solid #D7DAEB;
   border-radius: 7px;
   position: relative;
-  bottom:120px;
+  bottom:190px;
 }
 .input-container input[type='submit']{
   background-color:#01A9A7 !important;
@@ -334,7 +334,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 284px;
+  bottom: 349px;
   position: relative;
 }
 .or-line{
@@ -355,4 +355,19 @@ body{
 .input-container,
 .or-container{
   /* display:none; */
+}
+.join-community-container{
+  text-align: left;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 45px;
+  font-family: Playfair Display;
+  letter-spacing: 0px;
+  color: #1B245C;
+  margin: 0 45px;
+  bottom: 230px;
+  position: relative;
+}
+.join-community-container h1{
+  margin:0;
 }
