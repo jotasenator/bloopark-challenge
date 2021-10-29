@@ -347,6 +347,10 @@ body{
   color:#1B245C;
   padding-left:16px;
   padding-right: 15px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height:15px;
+  font-family: Playfair Display;
 }
 .input-container,
 .or-container{
