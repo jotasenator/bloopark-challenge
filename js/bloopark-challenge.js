@@ -60,14 +60,11 @@ const signInScreen =function(){
 // function to change elements when in first screen
 const homeScreen =function(){
     
-    $('.wifi,.b1,.b2,.b3,.b4,.battery,battery-tail').css('background-color','white')
-    
-    $('.wifi').css('box-shadow','0px 0px 0px 10px #22389C,0px 0px 0px 30px white,0px 0px 0px 40px #22389C,0px 0px 0px 60px white')  
-    
-    $('.clock').css('color','white')
-    
-    $('.balls-initial-view').css('visibility','visible')
+    history.replace()
 }
 
 // when click join-community or sign-in button then all black
 $('.join-community-button,.sign-in-container').on('click',signInScreen)
+
+// when click back-container button back to home screen
+$('.back-container').on('click',homeScreen)
