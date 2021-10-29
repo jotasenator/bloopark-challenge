@@ -166,7 +166,8 @@ body{
 .sign-up-facebook-button{
     height:55px;
     width:285px;
-    border-radius: 7px;
+    border-radius: 7px;         
+    cursor:pointer;
     font-weight: 600;
     font-size:17px;
     line-height: 17px;
@@ -182,7 +183,7 @@ body{
     }
 .sign-up-facebook-button{
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    color:#1B245C;    
+    color:#1B245C;
     letter-spacing: 0px;
     border:none;
     display: flex;
