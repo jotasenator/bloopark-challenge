@@ -25,6 +25,16 @@ const signInScreen =function(){
 
     $('.join-community-button').css({'background-color':'#01A9A7','bottom':'140px'})
 
+    $('.input-container').prepend(' <form action="#" >' + 
+                                    '<div><label for="email">Email:</label>'+ 
+                                    '<input type="mail" id="email" name="email" value=""></div>'+
+                                    '<div><label for="password">Password:</label><br>'+
+                                    '<input type="password" id="password" name="password" value=""></div>'+
+                                    '<div><label for="confirm-password">Confirm password:</label><br>'+
+                                    '<input type="password" id="password" name="password" value=""></div>'+
+                                    '<input type="submit" value="Join the community">'+  
+                                    '</form> ')
+
     $('.balls-initial-view').css('visibility','hidden')
     
     $('.indicator').css({'background-color':'black','opacity':'1'})
