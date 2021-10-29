@@ -74,9 +74,6 @@ body{
 }
 .battery{
   background-color:white;
-  
-}
-.battery{
   border-radius:1px;
   height:7px;
   width:18px; 
@@ -188,11 +185,17 @@ body{
     border:none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     
 }
 .sign-up-facebook-button img{
   margin-right: 12px;
+}
+.balls-initial-view{
+  visibility: visible;
+}
+.balls-sign-view{
+  visibility: hidden;
 }
 /* Balls */
 .ball-1,
