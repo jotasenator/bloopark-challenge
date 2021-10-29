@@ -25,6 +25,8 @@ const signInScreen =function(){
 
     $('.join-community-button').css('display','none')
 
+    $('.sign-up-facebook-button').css({'bottom': '220px','position': 'relative','margin': '0 auto '})
+
     $('.input-container').prepend(' <form action="#" >' + 
                                     '<div><label for="email">Email:</label>'+ 
                                     '<input type="mail" id="email" name="email" value=""></div>'+
