@@ -343,6 +343,10 @@ body{
   height:1px;
   background: #D4D8EB 0% 0% no-repeat padding-box;
 }
+.input-container,
+.or-container{
+  display:none;
+}
 .or-container p{
   color:#1B245C;
   padding-left:16px;
@@ -351,10 +355,6 @@ body{
   font-size: 15px;
   line-height:15px;
   font-family: Playfair Display;
-}
-.input-container,
-.or-container{
-  /* display:none; */
 }
 .join-community-container{
   text-align: left;
@@ -367,6 +367,7 @@ body{
   margin: 0 45px;
   bottom: 230px;
   position: relative;
+  display:none;
 }
 .join-community-container h1{
   margin:0;

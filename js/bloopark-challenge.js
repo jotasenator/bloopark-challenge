@@ -42,6 +42,8 @@ const signInScreen =function(){
     $('.balls-initial-view').css('visibility','hidden')
     
     $('.indicator').css({'background-color':'black','opacity':'1','bottom':'979px'})
+
+    $('.join-community-container,.input-container,.or-container').css('display','flex')
 }
 
 // function to change elements when in first screen
