@@ -23,7 +23,7 @@ const signInScreen =function(){
     
     $('.clock').css('color','black')
 
-    $('.join-community-button').css({'background-color':'#01A9A7','bottom':'140px'})
+    $('.join-community-button').css('display','none')
 
     $('.input-container').prepend(' <form action="#" >' + 
                                     '<div><label for="email">Email:</label>'+ 

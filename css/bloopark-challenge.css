@@ -166,7 +166,8 @@ body{
     gap:15px;    
 }
 .join-community-button,
-.sign-up-facebook-button{
+.sign-up-facebook-button,
+.input-container input[type='submit']{
     height:55px;
     width:285px;
     border-radius: 7px;         
@@ -178,7 +179,8 @@ body{
     position: relative;
     z-index: 1;
 }
-.join-community-button{
+.join-community-button,
+.input-container input[type='submit']{
     letter-spacing: 0px;
     background: #121C5F73 0% 0% no-repeat padding-box;
     color:white;
@@ -311,4 +313,21 @@ body{
   width: 134px;
   bottom: 690px;
   position: relative;
+}
+
+/* input-container */
+.input-container{
+  margin:0 auto;
+  width:285px;
+  height: 203px;
+  background: #F6F6FB 0% 0% no-repeat padding-box;
+  border: 1px solid #D7DAEB;
+  border-radius: 7px;
+  position: relative;
+  bottom:120px;
+  /* display: none; */
+}
+.input-container input[type='submit']{
+  background-color:#01A9A7 !important;
+  bottom:-115px;
 }
