@@ -325,9 +325,30 @@ body{
   border-radius: 7px;
   position: relative;
   bottom:120px;
-  /* display: none; */
 }
 .input-container input[type='submit']{
   background-color:#01A9A7 !important;
   bottom:-115px;
+}
+.or-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 284px;
+  position: relative;
+}
+.or-line{
+  /* display: none; */  
+  width: 115px;
+  height:1px;
+  background: #D4D8EB 0% 0% no-repeat padding-box;
+}
+.or-container p{
+  color:#1B245C;
+  padding-left:16px;
+  padding-right: 15px;
+}
+.input-container,
+.or-container{
+  /* display:none; */
 }
