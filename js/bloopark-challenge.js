@@ -60,7 +60,8 @@ const signInScreen =function(){
 // function to change elements when in first screen
 const homeScreen =function(){
     
-    history.back()
+    location.reload();
+    return false;
 }
 
 // when click join-community or sign-in button then all black
