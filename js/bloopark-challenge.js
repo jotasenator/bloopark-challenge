@@ -11,28 +11,36 @@ ctx.strokeStyle = 'white';
 ctx.stroke();
 
 
-// function to turn white into black of elements
+// function to change elements when in sign in screen
 
-const allBlack =function(){
-    $('.balls-initial-view').css('visibility','hidden')
+const signInScreen =function(){
 
+    $('.container').css({'background-color':'white','border':'1px #D4D8EB solid'})    
+    
     $('.wifi,.b1,.b2,.b3,.b4,.battery,battery-tail').css('background-color','black')
-
+    
     $('.wifi').css('box-shadow','0px 0px 0px 10px #22389C,0px 0px 0px 30px black,0px 0px 0px 40px #22389C,0px 0px 0px 60px black')  
-        
+    
     $('.clock').css('color','black')
+
+    $('.join-community-button').css({'background-color':'#01A9A7','bottom':'140px'})
+
+    $('.balls-initial-view').css('visibility','hidden')
+    
+    $('.indicator').css({'background-color':'black','opacity':'1'})
 }
 
-// function to turn black into white of elements
-const allWhite =function(){
-    $('.balls-initial-view').css('visibility','visible')
-
+// function to change elements when in first screen
+const homeScreen =function(){
+    
     $('.wifi,.b1,.b2,.b3,.b4,.battery,battery-tail').css('background-color','white')
-
+    
     $('.wifi').css('box-shadow','0px 0px 0px 10px #22389C,0px 0px 0px 30px white,0px 0px 0px 40px #22389C,0px 0px 0px 60px white')  
-        
+    
     $('.clock').css('color','white')
+    
+    $('.balls-initial-view').css('visibility','visible')
 }
 
-// when click join-community button then all black
-$('.join-community-button').on('click',allBlack)
+// when click join-community or sign-in button then all black
+$('.join-community-button,.sign-in-container button').on('click',signInScreen)
