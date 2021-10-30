@@ -540,3 +540,6 @@ body{
 .red-placeholder::-webkit-input-placeholder {
   color: red
 }
+.please-check-message{
+  padding-top:8px;
+}

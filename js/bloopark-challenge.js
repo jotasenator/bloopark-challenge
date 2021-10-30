@@ -75,14 +75,22 @@ $('.back-container').on('click',homeScreen)
 
 // handleSubmit preventing submit from form
 function handleSubmit(e) {
-    e.preventDefault();
-    if($('#email').val()==='' ){        
+    e.preventDefault()
+    let emailValue=$('#email').val()
+    let password=$('#password').val()
+    let passwordConfirmation=$('#password-confirmation').val()
+
+    
+    const pleaseCheckMessage = $('<p class="please-check-message">Please check your email address or your password</p>')
+    $('.input-container').append(pleaseCheckMessage).css({'color':'#FF0000','flex-direction':'column','font-weight':'200','font-size':'13px','line-height':'17px','font-family': 'Barlow Semi Condensed','text-align':'center'})
+    
+    if(emailValue==='' ){        
         $('#email').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'})        
     }
-    if($('#password').val()===''){
+    if(password===''){
         $('#password').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'})
     }
-    if($('#password-confirmation').val()===''){
+    if(passwordConfirmation===''){
         $('#password-confirmation').css({'border-bottom':'1px solid red','border-bottom-left-radius':'unset','border-bottom-right-radius':'unset','padding-bottom':'4px','background-color':'#FFF5F5'})        
     }
     return false;
