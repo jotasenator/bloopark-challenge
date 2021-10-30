@@ -39,12 +39,12 @@ const signInScreen =function(){
     $('.sign-up-facebook-button').css({'bottom': '390px','position': 'relative','margin': '0 auto '})
 
     $('.input-container').prepend(' <form action="#" >' + 
-                                    '<div><label for="email">Email:</label>'+ 
-                                    '<input type="mail" id="email" name="email" value=""></div>'+
-                                    '<div><label for="password">Password:</label><br>'+
-                                    '<input type="password" id="password" name="password" value=""></div>'+
-                                    '<div><label for="confirm-password">Confirm password:</label><br>'+
-                                    '<input type="password" id="password" name="password" value=""></div>'+
+                                    // '<div><label for="email">Email:</label>'+ 
+                                    '<input type="mail" id="email" name="email" placeholder="Email" value=""></div>'+
+                                    // '<div><label for="password">Password:</label><br>'+
+                                    '<input type="password" id="password" placeholder="Password" name="password" value=""></div>'+
+                                    // '<div><label for="confirm-password">Confirm password:</label><br>'+
+                                    '<input type="password" id="password-confirmation" placeholder="Confirm password" name="password" value=""></div>'+
                                     '<input type="submit" value="Join the community">'+  
                                     '</form> ')
 

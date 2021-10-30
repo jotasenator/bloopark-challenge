@@ -417,8 +417,7 @@ body{
   margin:0 auto;
   width:285px;
   height: 203px;
-  background: #F6F6FB 0% 0% no-repeat padding-box;
-  border: 1px solid #D7DAEB;
+  background: #F6F6FB;  
   border-radius: 7px;
   position: relative;
   bottom:235px;
@@ -426,7 +425,7 @@ body{
 }
 .input-container input[type='submit']{
   background-color:#01A9A7 !important;
-  bottom:-115px;
+  top:19px;
 }
 .or-container{
   display: flex;
@@ -503,4 +502,26 @@ body{
 }
 .reminder-sign-in{
   display:none;
+}
+/* input section */
+#email,
+#password,
+#password-confirmation{
+  height: 62px;
+  width: 279px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  top: 4px;
+  position: relative;
+  left: 1px;
+  background-color: #F6F6FB;
+}
+#email{
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
+}
+#password-confirmation{
+  border-bottom-left-radius:7px;
+  border-bottom-right-radius:7px;
 }
