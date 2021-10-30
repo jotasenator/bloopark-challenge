@@ -38,14 +38,14 @@ const signInScreen =function(){
 
     $('.sign-up-facebook-button').css({'bottom': '390px','position': 'relative','margin': '0 auto '})
 
-    $('.input-container').prepend(' <form action="#" >' + 
+    $('.input-container').prepend(' <form onsubmit="return handleSubmit(event)" >' + 
                                     // '<div><label for="email">Email:</label>'+ 
-                                    '<input type="mail" id="email" name="email" placeholder="Email" value=""></div>'+
+                                    '<input type="email" id="email" name="email" placeholder="Email" value=""></div>'+
                                     // '<div><label for="password">Password:</label><br>'+
                                     '<input type="password" id="password" placeholder="Password" name="password" value=""></div>'+
                                     // '<div><label for="confirm-password">Confirm password:</label><br>'+
                                     '<input type="password" id="password-confirmation" placeholder="Confirm password" name="password" value=""></div>'+
-                                    '<input type="submit" value="Join the community">'+  
+                                    '<input type="submit" id="join-community-submit" value="Join the community">'+  
                                     '</form> ')
 
     $('.sign-in-container').css('visibility','hidden')  
@@ -68,7 +68,23 @@ const homeScreen =function(){
 }
 
 // when click join-community or sign-in button then all black
-$('.join-community-button,.sign-in-container').on('click',signInScreen)
+$('.sign-in-container').on('click',signInScreen)
 
 // when click back-container button back to home screen
 $('.back-container').on('click',homeScreen)
+
+// handleSubmit preventing submit from form
+function handleSubmit(e) {
+    e.preventDefault();
+    if($('#email').val()==='' ){        
+        $('#email').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'})        
+    }
+    if($('#password').val()===''){
+        $('#password').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'})
+    }
+    if($('#password-confirmation').val()===''){
+        $('#password-confirmation').css({'border-bottom':'1px solid red','border-bottom-left-radius':'unset','border-bottom-right-radius':'unset','padding-bottom':'4px','background-color':'#FFF5F5'})        
+    }
+    return false;
+  }
+
