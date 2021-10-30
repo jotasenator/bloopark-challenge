@@ -501,3 +501,6 @@ body{
 #canvas-back{
   transform:scale(0.4) rotate(180deg);
 }
+.reminder-sign-in{
+  display:none;
+}

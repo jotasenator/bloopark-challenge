@@ -50,11 +50,13 @@ const signInScreen =function(){
 
     $('.sign-in-container').css('visibility','hidden')  
     $('.balls-initial-view').css('display','none')  
-    $('.balls-sign-view').css({'visibility':'visible','bottom': '390px','position':'relative'})  
+    $('.balls-sign-view').css({'visibility':'visible','bottom': '440px','position':'relative'})  
     
     $('.indicator').css({'background-color':'black','opacity':'1','bottom':'550px'})
 
     $('.join-community-container,.input-container,.or-container,.back-container').css('display','flex')
+
+    $('.reminder-sign-in').css({'display':'flex','display': 'flex','bottom': '388px','position':'relative','text-align': 'center','justify-content': 'center'})
 
 
 }
