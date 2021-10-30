@@ -109,8 +109,10 @@ function handleSubmit(e) {
             $('#password-confirmation').css({'border-bottom':'#F6F6FB','background-color':'#F6F6FB'})
         })
     }
-    if(emailValue && password && passwordConfirmation!==''){
+    if(emailValue && password && passwordConfirmation!=='' && (password.length === passwordConfirmation.length) && (password === passwordConfirmation)){
         $('.please-check-message').css('visibility','hidden')
+        $('.email,.password,.password-confirmation').css({'background-color':'#F6F6FB','border-bottom':'1px solid #D7DAEB'})
+        alert('Now you will see the world with new eyes!')        
     }
     return false;
   }
