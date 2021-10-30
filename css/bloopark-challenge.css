@@ -537,9 +537,64 @@ body{
   color:#1B245C;
   opacity:1;
 }
-.red-placeholder::-webkit-input-placeholder {
-  color: red
-}
 .please-check-message{
   padding-top:8px;
+}
+/* clases for changing placeholder color */
+
+/* Safari & Chrome */
+.email-red::-webkit-input-placeholder {
+  color: red;
+}
+
+/* Firefox */
+.email-red::-moz-placeholder {
+  color: red;
+}
+
+.email-red:-moz-placeholder {
+  color: red;
+}
+
+/* IE */
+.email-red:-ms-input-placeholder {
+  color: red;
+}
+
+/* Safari & Chrome */
+.password-red::-webkit-input-placeholder {
+  color: red;
+}
+
+/* Firefox */
+.password-red::-moz-placeholder {
+  color: red;
+}
+
+.password-red:-moz-placeholder {
+  color: red;
+}
+
+/* IE */
+.password-confirmation-red:-ms-input-placeholder {
+  color: red;
+}
+
+/* Safari & Chrome */
+.password-confirmation-red::-webkit-input-placeholder {
+  color: red;
+}
+
+/* Firefox */
+.password-confirmation-red::-moz-placeholder {
+  color: red;
+}
+
+.password-confirmation-red:-moz-placeholder {
+  color: red;
+}
+
+/* IE */
+.password-confirmation-red:-ms-input-placeholder {
+  color: red;
 }

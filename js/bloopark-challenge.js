@@ -40,11 +40,11 @@ const signInScreen =function(){
 
     $('.input-container').prepend(' <form onsubmit="return handleSubmit(event)" >' + 
                                     // '<div><label for="email">Email:</label>'+ 
-                                    '<input type="email" id="email" name="email" placeholder="Email" value=""></div>'+
+                                    '<input type="email" class="email" id="email" name="email" placeholder="Email" value="" autocomplete="off"></div>'+
                                     // '<div><label for="password">Password:</label><br>'+
-                                    '<input type="password" id="password" placeholder="Password" name="password" value=""></div>'+
+                                    '<input type="password" class="password" id="password" placeholder="Password" name="password" value="" autocomplete="off"></div>'+
                                     // '<div><label for="confirm-password">Confirm password:</label><br>'+
-                                    '<input type="password" id="password-confirmation" placeholder="Confirm password" name="password" value=""></div>'+
+                                    '<input type="password" class="password-confirmation" id="password-confirmation" placeholder="Confirm password" name="password" value="" autocomplete="off"></div>'+
                                     '<input type="submit" id="join-community-submit" value="Join the community">'+  
                                     '</form> ')
 
@@ -79,24 +79,45 @@ function handleSubmit(e) {
     let emailValue=$('#email').val()
     let password=$('#password').val()
     let passwordConfirmation=$('#password-confirmation').val()
-
     
     const pleaseCheckMessage = $('<p class="please-check-message">Please check your email address or your password</p>')
     $('.please-check-message').remove()
     $('.input-container').append(pleaseCheckMessage).css({'color':'#FF0000','flex-direction':'column','font-weight':'200','font-size':'13px','line-height':'17px','font-family': 'Barlow Semi Condensed','text-align':'center'})
     
+    
     if(emailValue==='' ){        
-        $('#email').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'})        
+        $('#email').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'}) 
+        $('.email').addClass('email-red')    
+    }else{
+        $('#email').on('blur',function(){        
+            $('#email').css({'border-bottom':'#F6F6FB','background-color':'#F6F6FB'})
+        })        
     }
     if(password===''){
         $('#password').css({'border-bottom':'1px solid red','background-color':'#FFF5F5'})
+        $('.password').addClass('email-red')  
+    }else{
+        $('#password').on('blur',function(){
+            $('#password').css({'border-bottom':'#F6F6FB','background-color':'#F6F6FB'})
+        })
     }
     if(passwordConfirmation===''){
-        $('#password-confirmation').css({'border-bottom':'1px solid red','border-bottom-left-radius':'unset','border-bottom-right-radius':'unset','padding-bottom':'4px','background-color':'#FFF5F5'})        
+        $('#password-confirmation').css({'border-bottom':'1px solid red','border-bottom-left-radius':'unset','border-bottom-right-radius':'unset','padding-bottom':'4px','background-color':'#FFF5F5'})  
+        $('.password-confirmation').addClass('email-red')       
+    }else{
+        $('#password-confirmation').on('blur',function(){
+            $('#password-confirmation').css({'border-bottom':'#F6F6FB','background-color':'#F6F6FB'})
+        })
     }
     if(emailValue && password && passwordConfirmation!==''){
         $('.please-check-message').css('visibility','hidden')
     }
     return false;
   }
+
+  $('.sign-up-facebook-button').on('click',function(){
+      alert('Please, try META first')
+  })
+
+
 
