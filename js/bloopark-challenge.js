@@ -82,6 +82,7 @@ function handleSubmit(e) {
 
     
     const pleaseCheckMessage = $('<p class="please-check-message">Please check your email address or your password</p>')
+    $('.please-check-message').remove()
     $('.input-container').append(pleaseCheckMessage).css({'color':'#FF0000','flex-direction':'column','font-weight':'200','font-size':'13px','line-height':'17px','font-family': 'Barlow Semi Condensed','text-align':'center'})
     
     if(emailValue==='' ){        
@@ -92,6 +93,9 @@ function handleSubmit(e) {
     }
     if(passwordConfirmation===''){
         $('#password-confirmation').css({'border-bottom':'1px solid red','border-bottom-left-radius':'unset','border-bottom-right-radius':'unset','padding-bottom':'4px','background-color':'#FFF5F5'})        
+    }
+    if(emailValue && password && passwordConfirmation!==''){
+        $('.please-check-message').css('visibility','hidden')
     }
     return false;
   }
