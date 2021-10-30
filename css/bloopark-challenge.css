@@ -524,10 +524,6 @@ body{
   border-top-left-radius:7px;
   border-top-right-radius:7px;
 }
-#password-confirmation{
-  border-bottom-left-radius:7px;
-  border-bottom-right-radius:7px;
-}
 ::placeholder{
   color:#1B245C;
   font-family:'Barlow Semi Condensed';
