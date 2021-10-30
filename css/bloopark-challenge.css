@@ -105,7 +105,7 @@ body{
 
 /* canvas greater than symbol */
 #canvas {
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 5px;
   transform: scale(0.4);
 }
