@@ -119,6 +119,7 @@ body{
   width: 90%;
 }
 .sign-in-container button{
+  align-items: center;
   background-color: transparent;
   border:none;
   cursor: pointer;
@@ -475,6 +476,7 @@ body{
   justify-content: start;
 }
 .back-container button{ 
+  align-items: center;
   background-color: transparent;
   border:none;
   bottom: 155px;
