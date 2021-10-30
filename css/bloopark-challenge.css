@@ -7,50 +7,50 @@ body{
 .container{
     background-color:#22389C;
     height: 812px;
-    width: 375px;
     overflow: hidden;
+    width: 375px;
 }
 
 .top-indicators{
+    align-items: center;
     display: flex;
     float:right;
-    align-items: center;
-    margin-right: 19px;
     height: 44px;
+    margin-right: 19px;
 }
 /* wi-fi symbol */
 .wifi-container{  
-  clip-path: polygon(100% 0, 0 0, 50% 100%);
-  height:85px;
-  width:150px;
-  display:flex;
   align-items:center;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  display:flex;
+  height:85px;
   justify-content:center;  
-  transform:scale(0.15); 
   margin-right: -60px;
+  transform:scale(0.15); 
+  width:150px;
 }
 .wifi{
-  width:40px;
-  height:40px;
-  border-radius:50%;
   background-color:white;
+  border-radius:50%;
   box-shadow: 0px 0px 0px 10px #22389C,0px 0px 0px 30px white,0px 0px 0px 40px #22389C,0px 0px 0px 60px white; 
+  height:40px;
   position:relative;
   top:50%;   
+  width:40px;
 }
 /* connectivity intensity symbol */
 .connectivity-container{
   display:flex;
-  justify-content:center;
   gap: 2px;
-  width:19px;
+  justify-content:center;
   margin-right: -60px;
   transform: rotate(180deg) scale(0.8);
+  width:19px;
 }
 .b1,.b2,.b3,.b4{
   background-color:white;
-  width:3px;
   border-radius:2px;
+  width:3px;
 }
 .b4{
   height:5px;
@@ -66,26 +66,25 @@ body{
 }
 /* battery symbol */
 .battery-container{
+  align-items:center;  
   display:flex;
   justify-content:center;
-  align-items:center;  
   width:19px; 
-  
 }
 .battery{
   background-color:white;
   border-radius:1px;
-  height:7px;
-  width:18px; 
   border-radius:1px;
   box-shadow: 0px 0px 0px 0.3px #22389C,0px 0px 0px .8px #6D7AB8;
+  height:7px;
+  width:18px; 
 }
 .battery-tail{
   background-color:#6D7AB8;
   border-radius: 0 150px 150px 0;
   height:4px;
-  width:2px;  
   margin-left:2px;
+  width:2px;  
   }
 /* clock */
 .clock-container{
@@ -95,8 +94,8 @@ body{
 .clock{
   color:white; 
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;  
-  font-weight:600;
   font-size:14px;
+  font-weight:600;
   letter-spacing: -0.28px;
   line-height:17px; 
   margin-top: 25px;
@@ -106,24 +105,24 @@ body{
 
 /* canvas greater than symbol */
 #canvas {
-    transform: scale(0.4);
-    margin-left: 10px;
-    margin-top: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  transform: scale(0.4);
 }
 
 /* sign-in-container */
 .sign-in-container{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 90%;
-    margin-bottom: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 100px;
+  width: 90%;
 }
 .sign-in-container button{
-  display:flex;
   background-color: transparent;
   border:none;
   cursor: pointer;
+  display:flex;
 }
 .sign-in-container button:hover{
   padding-right:2px;
@@ -132,12 +131,12 @@ body{
   color:#EF24A8;  
 }
 .sign-in-container p{
-    font-family: 'Barlow Semi Condensed';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 14px;
-    letter-spacing: 0px;
-    color: #FFFFFF;    
+  color: #FFFFFF;    
+  font-family: 'Barlow Semi Condensed';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 14px;
+  letter-spacing: 0px;
 }
 
 /* welcome-container */
@@ -149,65 +148,65 @@ body{
 }
 .welcome-container h1{
     font-family: Playfair Display;
-    font-weight: 900;
     font-size: 60px;
+    font-weight: 900;
     line-height: 80px;
     margin:0px;
 }
 .welcome-container p{
-    height: 52px;
-    width: 285px;
-    font-family:'Barlow Semi Condensed';
-    font-size:18px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    opacity: 0.55;
+  font-family:'Barlow Semi Condensed';
+  font-size:18px;
+  height: 52px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  opacity: 0.55;
+  width: 285px;
 }
 /* button container */
 .button-container{
     display:flex;
     flex-direction: column;    
     justify-content: center;    
-    margin:240px 45px 0 45px;
     gap:15px;    
+    margin:240px 45px 0 45px;
 }
 .join-community-button,
 .sign-up-facebook-button,
 .input-container input[type='submit']{
-    height:55px;
-    width:285px;
-    border-radius: 7px;         
-    cursor:pointer;
-    font-weight: 600;
-    font-size:17px;
-    line-height: 17px;
-    font-family:'Barlow Semi Condensed';
-    position: relative;
-    z-index: 1;
+  border-radius: 7px;         
+  cursor:pointer;
+  font-family:'Barlow Semi Condensed';
+  font-size:17px;
+  font-weight: 600;
+  height:55px;
+  line-height: 17px;
+  position: relative;
+  width:285px;
+  z-index: 1;
 }
 .join-community-button{
   cursor:not-allowed;
 }
 .join-community-button,
 .input-container input[type='submit']{
-    letter-spacing: 0px;
-    background: #121C5F73 0% 0% no-repeat padding-box;
-    color:white;
-    border: 2px solid #FFFFFF;    
-    }
+  background: #121C5F73 0% 0% no-repeat padding-box;
+  border: 2px solid #FFFFFF;    
+  color:white;
+  letter-spacing: 0px;
+}
 .sign-up-facebook-button{
+  align-items: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #1B245C;
     color:#1B245C;
-    letter-spacing: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    letter-spacing: 0px;
 }
 .sign-up-facebook-button img{
+  height: 20px;
   margin-right: 12px;
   width:20px;
-  height: 20px;
 }
 .balls-initial-view{
   visibility: visible;
@@ -231,19 +230,19 @@ body{
   position: relative;
 }
 .ball-1{
-  height: 90px;
-  width: 90px;
   background-color: transparent;
-  box-shadow: 0px 0px 0px 30px #00A8A6;  
   bottom: 664px;
+  box-shadow: 0px 0px 0px 30px #00A8A6;  
+  height: 90px;
   right: 31px;
+  width: 90px;
 }
 .ball-2{
-  height: 100px;
-  width:100px;
   background-color: #FFEEB0;
   bottom: 704px;
+  height: 100px;
   left:310px;
+  width:100px;
 
 }
 .ball-3{
@@ -325,103 +324,103 @@ body{
 .ball-19,
 .ball-20,
 .ball-21{
-  position:relative;  
   border-radius: 50%;
   filter: blur(4px);
+  position:relative;  
 }
 .ball-12{
   background: #EF24A8;
-  width: 40px;
-  height: 40px;
   bottom:180px;
+  height: 40px;
   right: 10px;
+  width: 40px;
 }
 .ball-13{
   background: #FFEEB0;  
-  width: 18px;
-  height: 18px;
   bottom:10px;
+  height: 18px;
   left:293px;
+  width: 18px;
 }
 .ball-14{
-  width: 14px;
-  height: 14px;
   background-color: #EF24A8;
   bottom: 350px;
+  height: 14px;
   left: 325px;
+  width: 14px;
 }
 .ball-15{
-  width: 14px;
-  height: 14px;
   background-color: #FFEEB0;
   bottom: 520px;
+  height: 14px;
   left: 320px;
+  width: 14px;
 }
 .ball-16{
-  width: 17px;
-  height: 17px;
   background-color: #EEA900;
   bottom:643px;
+  height: 17px;
   left: 279px;
+  width: 17px;
 }
 .ball-17{
-  width: 15px;
-  height: 15px;
   background-color: #EEA900;
   bottom:535px;
+  height: 15px;
   left: 13px;
+  width: 15px;
 }
 .ball-18{
-  width: 55px;
-  height: 55px;
   background-color: transparent;
-  box-shadow: 0px 0px 0px 20px #00A8A6;
   bottom:660px;
+  box-shadow: 0px 0px 0px 20px #00A8A6;
+  height: 55px;
   left: 330px;
+  width: 55px;
 }
 .ball-19{
-  width: 30px;
-  height: 30px;
   background-color: transparent;
-  box-shadow: 0px 0px 0px 8px #00A8A6;
   bottom: 585px;
+  box-shadow: 0px 0px 0px 8px #00A8A6;
+  height: 30px;
   left: 33px;
+  width: 30px;
 }
 .ball-20{
-  width: 10px;
-  height: 10px;
   background-color: transparent;
-  box-shadow: 0px 0px 0px 10px #00A8A6;
   bottom: 168px;
+  box-shadow: 0px 0px 0px 10px #00A8A6;
+  height: 10px;
   left: 25px;
-  }
+  width: 10px;
+}
 .ball-21{
   background-color: transparent;
-  box-shadow: 0px 0px 0px 15px #EEA900;
-  width: 40px;
-  height: 40px;
   bottom: 168px;
+  box-shadow: 0px 0px 0px 15px #EEA900;
+  height: 40px;
   left: 329px;
+  width: 40px;
   }
 /* indicator */
 .indicator{
   background-color: white;
   border-radius: 100px;
+  bottom: 917px;
   height: 5px;
   margin: 0 auto;
   opacity: 0.14;
-  width: 134px;
-  bottom: 917px;
   position: relative;
+  width: 134px;
 }
 
 /* input-container */
 .input-container{
-  margin:0 auto;
-  width:285px;
-  height: 203px;
-  position: relative;
   bottom:235px;
+  height: 203px;
+  margin:0 auto;
+  position: relative;
+  width:285px;
   z-index:1;
 }
 .input-container input[type='submit']{
@@ -429,17 +428,17 @@ body{
   top:19px;
 }
 .or-container{
-  display: flex;
-  justify-content: center;
   align-items: center;
   bottom: 389px;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 .or-line{
   /* display: none; */  
-  width: 115px;
-  height:1px;
   background: #D4D8EB 0% 0% no-repeat padding-box;
+  height:1px;
+  width: 115px;
 }
 .input-container,
 .or-container{
@@ -447,42 +446,42 @@ body{
 }
 .or-container p{
   color:#1B245C;
+  font-family: Playfair Display;
+  font-size: 15px;
+  font-weight: 900;
+  line-height:15px;
   padding-left:16px;
   padding-right: 15px;
-  font-weight: 900;
-  font-size: 15px;
-  line-height:15px;
-  font-family: Playfair Display;
 }
 .join-community-container{
-  text-align: left;
-  font-weight: 900;
-  font-size: 21px;
-  line-height: 45px;
-  font-family: Playfair Display;
-  letter-spacing: 0px;
   color: #1B245C;
+  font-size: 21px;
+  font-family: Playfair Display;
+  font-weight: 900;
+  display:none;
+  letter-spacing: 0px;
+  line-height: 45px;
   margin: 0 45px;
   bottom: 270px;
   position: relative;
-  display:none;
+  text-align: left;
 }
 .join-community-container h1{
   margin:0;
 }
 .back-container{
-  display:none;  
   align-items: center;
+  display:none;  
   justify-content: start;
 }
 .back-container button{ 
-  display:flex; 
   background-color: transparent;
   border:none;
-  cursor: pointer;
   bottom: 155px;
-  position: relative;
+  cursor: pointer;
+  display:flex; 
   left: 10px;
+  position: relative;
 }
 .back-container button p:hover{
   color:#01A9A7;
@@ -491,12 +490,12 @@ body{
   padding-left:2px;
 }
 .back-container p{
+  color: black;    
   font-family: 'Barlow Semi Condensed';
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
   line-height: 14px;
   letter-spacing: 0px;
-  color: black;    
 }
 #canvas-back{
   transform:scale(0.4) rotate(180deg);
@@ -509,17 +508,17 @@ body{
 #email,
 #password,
 #password-confirmation{
-  height: 62px;
-  width: 259px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  top: 4px;
-  position: relative;
-  left: 1px;
   background-color: #F6F6FB;
-  padding-left:20px; 
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  height: 62px;
+  left: 1px;
   outline-style: none;
+  padding-left:20px; 
+  position: relative;
+  top: 4px;
+  width: 259px;
 }
 #email{
   border-top-left-radius:7px;
@@ -530,11 +529,11 @@ body{
   border-bottom-right-radius:7px;
 }
 ::placeholder{
-  font-weight: 600;
-  font-size:17px;
-  line-height: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color:#1B245C;
+  font-family:'Barlow Semi Condensed';
+  font-size:17px;
+  font-weight: 600;
+  line-height: 17px;
   opacity:1;
 }
 .please-check-message{
