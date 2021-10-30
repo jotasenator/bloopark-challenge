@@ -514,6 +514,8 @@ body{
   border-left: none;
   border-right: none;
   border-top: none;
+  font-size: 20px;
+  font-family: inherit;
   height: 62px;
   left: 1px;
   outline-style: none;
@@ -525,6 +527,7 @@ body{
 #email{
   border-top-left-radius:7px;
   border-top-right-radius:7px;
+  
 }
 ::placeholder{
   color:#1B245C;
