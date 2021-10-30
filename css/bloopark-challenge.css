@@ -417,8 +417,6 @@ body{
   margin:0 auto;
   width:285px;
   height: 203px;
-  background: #F6F6FB;  
-  border-radius: 7px;
   position: relative;
   bottom:235px;
   z-index:1;
@@ -517,6 +515,7 @@ body{
   left: 1px;
   background-color: #F6F6FB;
   padding-left:20px; 
+  outline-style: none;
 }
 #email{
   border-top-left-radius:7px;
