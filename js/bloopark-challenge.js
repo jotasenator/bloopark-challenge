@@ -56,7 +56,7 @@ const signInScreen =function(){
 
     $('.join-community-container,.input-container,.or-container,.back-container').css('display','flex')
 
-    $('.reminder-sign-in').css({'display':'flex','display': 'flex','bottom': '388px','position':'relative','text-align': 'center','justify-content': 'center'})
+    $('.reminder-sign-in').css({'display':'flex','bottom': '388px','position':'relative','text-align': 'center','justify-content': 'center','font-weight':'600','font-size':'14px','line-height':'18px','font-family':'Barlow by Thunderpanda ver 02','color':' #1B245C'})
 
 
 }
