@@ -52,7 +52,7 @@ const signInScreen =function(){
     $('.balls-initial-view').css('display','none')  
     $('.balls-sign-view').css({'visibility':'visible','bottom': '440px','position':'relative'})  
     
-    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'550px'})
+    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'566px'})
 
     $('.join-community-container,.input-container,.or-container,.back-container').css('display','flex')
 
