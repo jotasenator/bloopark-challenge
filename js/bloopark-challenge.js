@@ -48,9 +48,11 @@ const signInScreen =function(){
                                     '<input type="submit" value="Join the community">'+  
                                     '</form> ')
 
-    $('.balls-initial-view,.sign-in-container').css('visibility','hidden')
+    $('.sign-in-container').css('visibility','hidden')  
+    $('.balls-initial-view').css('display','none')  
+    $('.balls-sign-view').css({'visibility':'visible','bottom': '390px','position':'relative'})  
     
-    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'1029px'})
+    $('.indicator').css({'background-color':'black','opacity':'1','bottom':'550px'})
 
     $('.join-community-container,.input-container,.or-container,.back-container').css('display','flex')
 
