@@ -505,6 +505,12 @@ body{
 .reminder-sign-in{
   display:none;
   font-family:'Barlow Semi Condensed';
+  z-index:1;
+}
+.reminder-sign-in span:hover{
+  cursor:pointer;
+ 
+  
 }
 /* input section */
 #email,

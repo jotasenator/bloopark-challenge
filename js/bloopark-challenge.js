@@ -121,5 +121,9 @@ function handleSubmit(e) {
       alert('Please, try META first')
   })
 
+  $('.reminder-sign-in span').on('click',function(){
+      alert('we love each time you are back with us :P')
+  })
+
 
 
