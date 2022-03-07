@@ -37,7 +37,7 @@
 
         <div class='clock-container'>
             <div class='clock'>
-                9:41
+                
             </div>
         </div>
 
@@ -109,5 +109,11 @@
     </div>
         
     <script type="text/javascript" src="/js/bloopark-challenge.js"></script>
+    <script>    
+      const date = new Date().toString().split(' ')[4].slice(0,5)
+      $('.clock').text(date)
+      
+  
+    </script>
 </body>
 </html>
